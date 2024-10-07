@@ -46,7 +46,9 @@ function retornaTodosCortes() {
   return barbearia.cortes;
 }
 
-function retornaTodasBarbas() {}
+function retornaTodasBarbas() {
+  return barbearia.barbas;
+}
 
 function criaPedido(nomeCliente, corteId, barbaId) {}
 
