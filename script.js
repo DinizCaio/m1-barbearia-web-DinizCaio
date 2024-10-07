@@ -42,7 +42,9 @@ function verificaStatusBarbearia() {
   return "Estamos fechados";
 }
 
-function retornaTodosCortes() {}
+function retornaTodosCortes() {
+  return barbearia.cortes;
+}
 
 function retornaTodasBarbas() {}
 
