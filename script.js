@@ -50,7 +50,17 @@ function retornaTodasBarbas() {
   return barbearia.barbas;
 }
 
-function criaPedido(nomeCliente, corteId, barbaId) {}
+function criaPedido(nomeCliente, corteId, barbaId) {
+  let pedido = {};
+  pedido.nome = nomeCliente;
+  const corte = buscaCortePorId(corteId);
+  const barba = buscaBarbaPorId(barbaId);
+  pedido.pedidoCorte = corte.tipo;
+  pedido.pedidoCortePreco = corte.valor;
+  pedido.pedidoBarba = barba.tipo;
+  pedido.pedidoBarbaPreco = barba.valor;
+  return pedido;
+}
 
 function atualizarServico(lista, id, valor, tipo) {}
 
