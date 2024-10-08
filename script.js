@@ -62,6 +62,14 @@ function criaPedido(nomeCliente, corteId, barbaId) {
   return pedido;
 }
 
-function atualizarServico(lista, id, valor, tipo) {}
+function atualizarServico(lista, id, valor, tipo) {
+  for (let i = 0; i < lista.length; i++) {
+    if (lista[i].id == id) {
+      lista[i].valor = valor;
+      lista[i].tipo = tipo;
+    }
+  }
+  return lista;
+}
 
 function calculaTotal(pedido) {}
